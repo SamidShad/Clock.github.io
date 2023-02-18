@@ -9,10 +9,10 @@ setInterval(() => {
   let min = clock.getMinutes();
   let sec = clock.getSeconds();
 
-  if (hrs > 12) {
-    AMPM.innerHTML = "PM";
-  } else {
+  if (hrs < 12) {
     AMPM.innerHTML = "AM";
+  } else {
+    AMPM.innerHTML = "PM";
   }
 
   if (hrs > 12) {
